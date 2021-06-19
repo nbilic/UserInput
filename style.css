@@ -1,0 +1,278 @@
+ /*General body CSS*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: white black;
+  }
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid black;
+  }
+
+ body {
+     margin: 0;
+     padding: 0;
+     background: url(./images/bg7.jpg) no-repeat center center fixed ;
+     background-size: cover;
+     color: white;
+     font-family: 'Roboto', sans-serif;
+     overflow-y: scroll;
+     height: 100vh;
+ }
+
+
+/*CSS for the container*/
+ #container {
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+
+/*CSS for the main avatar display*/
+ #main-ss {
+     font-size: 12px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;    
+ }
+
+
+ /*CSS for the avatar select section*/
+#avatar-options {
+    opacity: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    flex-wrap: wrap; 
+    overflow: hidden;
+    height: 0;
+    transition: .4s;
+    
+}
+
+#avatar {
+    max-width: 180px;
+    height: 180px;
+    width: 100%;
+    background-color: white;
+    border:2px solid white;
+}
+
+#show-button {
+    display: flex;
+    justify-content: center;
+    margin:1% 0;
+}
+
+#arrow1,#arrow2 {
+    transition: .2s ease-in;
+}
+
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option img{
+    max-width: 100px;
+    max-height: 100px;
+    height: 124px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    margin: 5%;
+}
+.option button {
+    max-width: 100px;
+    max-height: 100px;
+    height: 100%;
+    width: 100%;
+    margin-left: -82%;
+    opacity: 0;
+}
+
+.option button:hover{
+    cursor: pointer;
+}
+
+
+/*CSS for user inputs*/
+#under{
+    text-align: center;
+}
+
+
+#user-input {
+    display: flex;
+    justify-content: center;
+}
+#user-input form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#user-input form input, #user-input form select,#user-input form textarea{
+     margin: 1%;
+     border:1px solid black;
+     border-radius: 5px;
+     padding: 5px;
+     resize: none;
+     transition: .4s ease-in-out;
+
+}
+
+
+#user-input form input:focus, #user-input form select:focus #globe-i,#user-input form textarea:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+/*CSS for background select section*/
+#display {
+    font-size: 18px;
+    border:0px;
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+    transition: .4s ease;
+}
+
+#display:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+
+#bg-select{
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    margin: auto;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;    
+}
+#bg-option {
+    margin: 1%;
+    max-width: 300px;
+    max-height: 170px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border:1px solid white;
+}
+#bg-option img{
+    
+    width: 100%;
+}
+
+#bg-option button{
+    display: flex;
+    align-content: center;
+    max-width: 300px;  
+    max-height: 171px;
+    width: 100%;
+    margin-left: -100%;
+    opacity: 0;
+    
+}
+#bg-option button:hover{
+    cursor: pointer;
+}
+
+#profile-effect{
+    
+    background:rgba(0,0,0,0.5);
+    max-width: 200px;
+    width: 100%;
+    margin-left:-83%;
+}
+
+
+/*CSS for the footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+footer img{
+    background-color: white;
+    width: 10%;
+}
+
+footer p{
+    padding-left: 2%;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 800px) {
+    #avatar-options img{
+       margin: 3% 0%;
+    }
+    
+    #avatar {
+        max-width: 180px;
+        height: 180px;
+        width: 100%;
+        background-color: white;
+        border:2px solid white;
+    }
+    
+    #show-button {
+        display: flex;
+        justify-content: center;
+        margin:1% 0;
+    }
+    
+    #arrow1,#arrow2 {
+        transition: .2s ease-in;
+    }
+    
+    
+    .option {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .option img{
+        max-width: 100px;
+        max-height: 100px;
+        height: 124px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid white;
+    }
+    .option button {
+        max-width: 100px;
+        max-height: 100px;
+        height: 100%;
+        width: 100%;
+        margin-left: -82%;
+        opacity: 0;
+    }
+    
+    .option button:hover{
+        cursor: pointer;
+    }
+    
+}

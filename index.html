@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8a224eecd.js" crossorigin="anonymous">
+    </script>
+    <script defer src="./script.js"></script>
+    <title>User input</title>
+</head>
+
+<body id="body">
+    <div id="container">
+        <div id="main-ss">
+            <h1>AVATAR SELECT</h1>
+            <img src="./images/default-avatar.png" alt="avatar" id="avatar">
+        </div>
+        <div id="show-button">
+            <button id="display" onclick="showSelect()">SHOW AVATARS <i class="fas fa-angle-double-right" id="arrow1"></i>
+        </div>
+
+        </button>
+        <div id="avatar-options">
+            <div class="option">
+                <img src="./images/avatar-1.jpg" alt="avatar-1">
+                <button onclick="changeAvatar('./images/avatar-1.jpg')"></button>
+            </div>
+            <div class="option">
+                <img src="./images/avatar-2.png" alt="avatar-2">
+                <button onclick="changeAvatar('./images/avatar-2.png')"></button>
+            </div>
+            <div class="option">
+                <img src="./images/avatar-3.jpg" alt="avatar-3">
+                <button onclick="changeAvatar('./images/avatar-3.jpg')"></button>
+            </div>
+            <div class="option">
+                <img src="./images/avatar-4.jpg" alt="avatar-4">
+                <button onclick="changeAvatar('./images/avatar-4.jpg')"></button>
+            </div>
+            <div class="option">
+                <img src="./images/avatar-5.jpg" alt="avatar-5">
+                <button onclick="changeAvatar('./images/avatar-5.jpg')"></button>
+            </div>
+            <div class="option">
+                <img src="./images/avatar-6.jpg" alt="avatar-6">
+                <button onclick="changeAvatar('./images/avatar-6.jpg')"></button>
+            </div>
+        </div>
+        <div id="under">
+            <h1>Profile Information</h1>
+        </div>
+        <div id="user-input">
+            <form>
+                <label for="username" id="username-label">&nbsp;<i class="fas fa-user" id="user-i" ></i> Username</label>
+                <input type="text" id="username" maxlength="12" placeholder="Username" required>
+                <label for="country">&nbsp<i class="fas fa-globe" id="globe-i"></i> Country</label>
+                <select name="country" id="country" label="from">
+                    <option value="🇭🇷 Croatia">🇭🇷 Croatia</option>
+                    <option value="🇷🇸 Serbia">🇷🇸 Serbia</option>
+                    <option value="🇧🇦 Bosnia & Herzegovina">🇧🇦 Bosnia & Herzegovina</option>
+                    <option value="🇺🇸 United States">🇺🇸 United States</option>
+                    <option value="🇫🇷 France">🇫🇷 France</option>
+                </select>
+                <label for="desc">&nbsp<i class="fas fa-scroll" id="desc-i"></i> Description</label>
+                <textarea name="desc" id="desc" cols="30" rows="5" maxlength="50" placeholder="Description"></textarea>
+            </form>
+        </div>
+        <div id="show-button">
+                <button id="display" onclick="showBGSelect()">SHOW BACKGROUNDS <i class="fas fa-angle-double-right" id="arrow2"></i>
+            </div>
+        <div id="bg-select">
+            <div id="bg-option">
+                <img src="./images/bg1.jpeg" alt="bg1">
+                <button onclick="changeBG('./images/bg1.jpeg')"></button>
+                <div id="profile-effect">
+                </div>
+            </div>
+            <div id="bg-option">
+                <img src="./images/bg2.jpg" alt="bg2">
+                <button onclick="changeBG('./images/bg2.jpg')"></button>
+                <div id="profile-effect">
+                </div>
+            </div>
+            <div id="bg-option">
+                <img src="./images/bg3.jpeg" alt="bg3">
+                <button onclick="changeBG('./images/bg3.jpeg')"></button>
+                <div id="profile-effect">
+                </div>
+            </div>
+            <div id="bg-option">
+                <img src="./images/bg4.jpg" alt="bg4">
+                <button onclick="changeBG('./images/bg4.jpg')"></button>
+                <div id="profile-effect">
+                </div>
+            </div>
+            <div id="bg-option">
+                <img src="./images/bg5.jpg" alt="bg3">
+                <button onclick="changeBG('./images/bg5.jpg')"></button>
+                <div id="profile-effect">
+                </div>
+            </div>
+            <div id="bg-option">
+                <img src="./images/bg6.jpg" alt="bg3">
+                <button onclick="changeBG('./images/bg6.jpg')"></button>
+                <div id="profile-effect">
+                </div>
+            </div>
+            <div id="bg-option">
+                <img src="./images/bg7.jpg" alt="bg3">
+                <button onclick="changeBG('./images/bg7.jpg')"></button>
+                <div id="profile-effect">
+                </div>
+            </div>
+            <div id="bg-option">
+                    <img src="./images/bg8.jpg" alt="bg3">
+                    <button onclick="changeBG('./images/bg8.jpg')"></button>
+                    <div id="profile-effect">
+                    </div>
+                </div>
+        </div>
+        <div id="show-button">
+            <button id="display" onclick="openSteam()">SAVE PROFILE <i class="far fa-save"></i></button>
+        </div>
+        <footer>
+            <img src="./images/valve.png" alt="valve">
+            <p>Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.</p>
+        </footer>
+    </div>
+
+   
+    
+</body>
+
+</html>
